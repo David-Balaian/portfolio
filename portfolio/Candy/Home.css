@@ -1,0 +1,399 @@
+body{
+    display: block;
+    margin: 0;
+    font-family: bekshire;
+    /* background-image: url(https://images.pexels.com/photos/956981/milky-way-starry-sky-night-sky-star-956981.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940); */
+   
+}
+header{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    margin: 0;
+    border-bottom: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 10px black;
+    background-color: white;
+    
+}
+section{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+a{
+    text-decoration: none;
+    color:inherit;
+    width: 100%;
+}
+li{
+  list-style: none;  
+}
+
+span{
+    margin:0;
+    position: absolute;
+}
+.price{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+    width: 100%;
+    color: #7a4428;
+}
+.price>span::before{
+    content: "Price : "
+}
+#circle1{
+    position: absolute;
+    background-color: white;
+    border-radius: 0 0 0 100%;
+    width: 30px;
+    height: 30px;
+    top:0;
+    right:0;
+    border:none;
+    outline: none;
+}
+#circle2{
+    position: absolute;
+    background-color: white;
+    border-radius: 100% 0 0 0;
+    width: 30px;
+    height: 30px;
+    bottom:0;
+    right:0 ;
+    border:none;
+    outline: none;
+}
+nav{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background-color: #7a4428;
+    color:wheat;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    
+}
+#logo{
+    background-color: #6bb9f000;
+    width:150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+#logo>img{
+    width:154px;
+    height: 130px;
+    margin: 0;
+}
+.dropdowns>ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.dropdowns{
+    display:flex;
+    width:100%;
+    align-items: center;
+    justify-content: space-between;
+}
+aside{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background-color: #bb2c35;
+    color:wheat;   
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-right: 20px;
+}
+aside>ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#circle3{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0 0 100% 0;
+    width: 30px;
+    height: 30px;
+    top:0;
+    left:0;
+    border:none;
+    outline: none;
+}
+#circle4{
+    position: absolute;
+    background-color: white;
+    border-radius: 0 100% 0 0;
+    width: 30px;
+    height: 31px;
+    bottom: 0;
+    left:0;
+    border:none;
+    outline: none;
+}
+nav button{
+        transition-duration: 0.5s;
+        background-color: inherit;
+    border: none;
+    outline: none;
+    color: wheat;
+    font-family: bekshire;
+    font-size: 18px;
+    cursor: pointer;
+
+}
+#products:hover{
+    background-color: wheat;
+    color: #bb2c35;
+    margin:0;
+    padding: 5px 50px;
+    border-radius: 20px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+
+
+}
+nav button:hover{
+    background-color: wheat;
+    color: #bb2c35;
+    margin:0;
+    padding: 5px 50px;
+    border-radius: 20px;
+}
+aside button{
+    transition-duration: 0.5s;
+    background-color: inherit;
+    border: none;
+    outline: none;
+    color: wheat;
+    font-family: bekshire;
+    font-size: 18px;
+    cursor: pointer;
+}
+aside button:hover{
+    background-color: wheat;
+    color: #bb2c35;
+    margin:0;
+    padding: 5px 50px;
+    border-radius: 20px;
+}
+
+#prod{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    
+
+    /* background-color: red;
+    border: 1px solid black; */
+}
+#products>ul{
+    position: absolute;
+    display:none;
+    background-color: wheat;
+    padding: 20px;
+    left: 0;
+    right: 0;
+ }
+
+#products:hover ul{
+    display:flex;
+    flex-direction: column;
+}
+#content{
+    justify-content: center;
+    align-items: center;
+    
+}
+.cakes{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: whitesmoke;
+    border: 1px solid #7a4428;
+    display: block;
+    margin:20px;
+    box-shadow: none;
+    transition-property: box-shadow;
+    transition-duration: 0.5s;
+
+}
+.cakes:hover{
+    box-shadow: 2px 2px 20px  black;
+    /* transform: rotate3d(1, 0, 0, 180deg ); */
+    
+}
+.cakeimg{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: absolute;
+    transition-duration: 0.5s;
+}
+.cakes:hover .cakeimg{
+    opacity: 0.1;
+}
+.composition{
+    position: relative;
+    height:70%;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #7a4428;
+    text-align: center;
+    
+
+}
+.composition>p{
+margin: 0;
+}
+.cakes:hover .composition{
+    display:flex;
+    /* transform: rotate3d(1,0,0,180deg ); */
+
+}
+.cakes:hover .price{
+    display: flex;
+}
+
+#cakesh1{
+    padding-top:150px; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #bb2c35;
+}
+#cakesh1 select{
+    transition-duration: 0.5s;
+    background-color: inherit;
+    border: none;
+    outline: none;
+    color: wheat;
+    background-color: #bb2c35;
+    font-family: bekshire;
+    padding: 5px 50px;
+    border-radius: 20px;
+
+    font-size: 18px;
+    cursor: pointer;
+
+}
+
+#cakesh1 button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    color: wheat;
+    background-color: #bb2c35;
+    font-family: bekshire;
+    padding: 5px 50px;
+    border-radius: 20px;
+
+    font-size: 18px;
+    cursor: pointer;
+}
+#cakesh1 button:hover{
+    background-color: wheat;
+    color: #bb2c35;
+    margin:0;
+    padding: 5px 50px;
+    border-radius: 20px;
+}
+#cakesh1  select:hover{
+    background-color: wheat;
+    color: #bb2c35;
+    margin:0;
+    padding: 5px 50px;
+    border-radius: 20px;
+}
+#cakesh1>div{
+    display: flex;
+    
+}
+.icon{
+    position: relative;
+    display: none;
+}
+.iconr{
+    position: relative;
+    display: none;
+}
+.dropdownspx>ul{
+    position: absolute;
+    display:none;
+    background-color:#bb2c35;
+    border-radius: 20px;
+    padding: 20px;
+    left: 0;
+    transition-duration: 0.5s;
+    width:150px; 
+    
+}
+.dropdownspxr>ul{
+    position: absolute;
+    display:none;
+    background-color:#7a4428;
+    border-radius: 20px;
+    padding: 20px;
+    right: 0;
+    transition-duration: 0.5s;
+    width: 150px;
+     
+    
+}
+.bestseller{
+    position: absolute;
+    width: 70px;
+    height: 70px;    
+    bottom:80%;
+    left:75%;
+}
+
+
+@font-face{
+    font-family: bekshire;
+    src: url(./BerkshireSwash-Regular.ttf)
+}
+@media only screen and (max-width: 1024px)
+{
+    .dropdowns{
+        display: none;
+    }
+    
+    .icon{
+        display: flex;
+    }.iconr{
+        display: flex;
+    }
+    
+    
+    .icon:hover ul{
+        display:flex;
+        flex-direction: column-reverse;
+
+    }
+    .iconr:hover ul{
+        display:flex;
+        flex-direction: column;
+    }
+}
